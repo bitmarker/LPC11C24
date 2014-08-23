@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;OlimexBoard11C24/src/sys_config.h&apos;" deleteContents="false" description="Delete resource &apos;OlimexBoard11C24/src/sys_config.h&apos;" element1="/OlimexBoard11C24/src/sys_config.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1408723151179"/>
+</session>

@@ -1,0 +1,13 @@
+#ifndef __SYS_CONFIG_H
+#define __SYS_CONFIG_H
+
+/* Build for 407x/8x chip family */
+#define CHIP_LPC11CXX
+
+#define DEBUG_ENABLE
+
+#define DEBUG_UART LPC_USART
+
+#define CRYSTAL_MAIN_FREQ_IN (12000000)
+
+#endif

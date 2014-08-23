@@ -1,0 +1,37 @@
+/*
+===============================================================================
+ Name        : OlimexBoard11C24.c
+ Author      : $(author)
+ Version     :
+ Copyright   : $(copyright)
+ Description : main definition
+===============================================================================
+*/
+
+#include "sys_config.h"
+#include "chip.h"
+
+#include <cr_section_macros.h>
+
+const uint32_t OscRateIn = 12000000;
+const uint32_t ExtRateIn = 0;
+
+int main(void) {
+
+	SystemCoreClockUpdate();
+	Chip_GPIO_Init(LPC_GPIO);
+
+	Chip_GPIO_SetPinDIROutput(LPC_GPIO, 10, 1);
+
+	Chip_GPIO_SetPinState(LPC_GPIO, 10, 1, true);
+
+    // Force the counter to be placed into memory
+    volatile static int i = 0 ;
+
+    // Enter an infinite loop, just incrementing a counter
+    while(1) {
+        i++ ;
+    }
+
+    return 0 ;
+}

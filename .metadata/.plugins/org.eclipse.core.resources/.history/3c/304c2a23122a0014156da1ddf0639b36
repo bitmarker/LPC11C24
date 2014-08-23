@@ -1,0 +1,8 @@
+#ifndef __SYS_CONFIG_H
+#define __SYS_CONFIG_H
+
+/* Build for 407x/8x chip family */
+#define CHIP_LPC407X_8X
+
+
+#endif
